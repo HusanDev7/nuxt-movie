@@ -1,0 +1,68 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('@/assets/img/header-banner.png') no-repeat center center;
+    background-size: cover;
+    z-index: 10000;
+
+    &-bg {
+        width: 100%;
+        height: 581px;
+        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+        position: absolute;
+        z-index: 1;
+    }
+
+    &-bg-bottom {
+        width: 100%;
+        height: 581px;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%);
+    }
+}
+
+.home {
+    &-banner-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 5; // Проверьте корректность z-index
+
+        &-img1 {
+            position: absolute;
+            width: 470px;
+            height: 470px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #fff 100%);
+            animation: rotateAnimation 7s infinite linear;
+
+            @keyframes rotateAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        &-img2 {
+            position: relative;
+            width: 103px;
+            height: 111px;
+            background: linear-gradient(180deg, #fff 14.72%, rgba(255, 255, 255, 0.5) 42.76%, rgba(22, 0, 253, 0) 100%);
+            cursor: pointer;
+        }
+    }
+}

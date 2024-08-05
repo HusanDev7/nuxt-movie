@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.container {
+    width: 100%;
+    max-width: 1591px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
