@@ -4,9 +4,15 @@ import footerLayout from "@/layouts/footerLayout.vue";
 </script>
 
 <template>
-  <div class="wrapper">
     <headerLayout />
+  <div class="wrapper container">
     <NuxtPage />
-    <footerLayout />
   </div>
+    <footerLayout />
 </template>
+
+<style scoped>
+.wrapper {
+  margin-top: 200px;
+}
+</style>
